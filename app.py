@@ -42,7 +42,7 @@ st.header("Application tracking System")
 input_text =st.text_area("Job Description", key= "input")
 uploaded_file =st.file_uploader("Upload your resume(PDF)...",type=["pdf"])
 
-if uploaded_file is None:
+if uploaded_file is not None:
     st.write("File Uploaded Sucessfully")
 
 sumbit1 = st.button("Tell me about the resume")
@@ -91,4 +91,5 @@ if sumbit3:
         st.subheader("The Response is ")
         st.write(response)
     else:
+
         st.write("Please upload the file ")
