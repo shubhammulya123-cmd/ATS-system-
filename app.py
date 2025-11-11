@@ -13,8 +13,8 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 def get_gemini_response(input, pdf_content,prompt):
     model = genai.GenerativeModel('gemini-2.5-flash')
-    reponse =model.generate_content([input,pdf_content[0],prompt])
-    return reponse.text
+    response =model.generate_content([input,pdf_content[0],prompt])
+    return response.text
 
 def input_pdf_setup(uploaded_file):
     if uploaded_file is not None:
@@ -94,5 +94,6 @@ if sumbit3:
     else:
 
         st.write("Please upload the file ")
+
 
 
