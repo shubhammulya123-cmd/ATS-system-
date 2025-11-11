@@ -57,10 +57,10 @@ why. Keep the answer concise and in paragraph form."""
 
 input_prompt2 = """
 Analyze this resume and provide detailed, actionable feedback on how it can be improved. Focus on enhancing formatting, structure, clarity, and consistency, 
-while also improving the strength and impact of bullet points. Evaluate keyword usage, tone, and alignment with target roles or industries, and identify where 
-quantifiable achievements or stronger action verbs can be added. Suggest how the candidate can better highlight relevant skills, tools, and experience to stand out. 
-Finally, include specific recommendations for additional skills, certifications, or sections that would make the resume more competitive. Present all feedback in a 
-clear, point-wise format for easy implementation."""
+while also improving the strength and impact of bullet points. Evaluate keyword usage, tone, and alignment with target roles or industries, and identify 
+where quantifiable achievements or stronger action verbs can be added. Suggest how the candidate can better highlight relevant skills, tools, and experience 
+to stand out. Finally, include specific recommendations for additional skills, certifications, or sections that would make the resume more competitive. 
+Present all feedback in a clear, point-wise format for easy implementation, and keep the overall response concise — roughly about one page in length"""
 
 input_prompt3 ="""
 Analyze the resume against the JD and give a concise paragraph. Include: a percentage match (0–100%) based on required skills/tools, education, 
@@ -94,4 +94,5 @@ if sumbit3:
     else:
 
         st.write("Please upload the file ")
+
 
