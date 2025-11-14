@@ -38,7 +38,7 @@ def input_pdf_setup(uploaded_file):
     
 ##Streamlit app 
 st.set_page_config(page_title="ATS Resume Expert")
-st.header("Application tracking System")
+st.header("Applicant tracking System")
 input_text =st.text_area("Job Description", key= "input")
 uploaded_file =st.file_uploader("Upload your resume(PDF)...",type=["pdf"])
 
@@ -94,6 +94,7 @@ if sumbit3:
     else:
 
         st.write("Please upload the file ")
+
 
 
 
